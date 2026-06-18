@@ -1,0 +1,28 @@
+agent:
+  name: Zane
+  version: 1.0.0
+  role: frontend-engineer
+
+model:
+  provider: anthropic
+  id: claude-sonnet-4-6
+  temperature: 0.2
+
+project:
+  type: frontend
+  system_prompt: .zane/system-prompt.md
+  output_templates_dir: .zane/output-templates/
+
+standards:
+  html: semantic
+  accessibility: WCAG2.1-AA
+  css_methodology: BEM
+  js: vanilla
+  naming: kebab-case
+
+features:
+  enforce_system_prompt: true
+  require_semantic_html: true
+  require_alt_text: true
+  mobile_first: true
+  reduced_motion_support: true
